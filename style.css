@@ -29,7 +29,7 @@ body {
 #content-container {
   background-color: var(--base);
   width: 340px;
-  height: 580px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,6 +69,19 @@ header {
   font-size: 16px;
   color: black;
   background-color: var(--blue);
+}
+
+main {
+  position: absolute;
+  top: calc(50% - 18px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 12px;
+}
+#gif {
+  width: 308px;
+  border-radius: 8px;
 }
 
 footer {
@@ -148,10 +161,10 @@ footer {
     transform: translateY(0vh);
   }
   75% {
-    transform: translateY(90vh);
+    transform: translateY(100vh);
   }
   100% {
-    transform: translateY(90vh);
+    transform: translateY(100vh);
   }
 }
 
