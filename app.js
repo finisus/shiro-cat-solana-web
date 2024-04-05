@@ -67,12 +67,12 @@ document.addEventListener('DOMContentLoaded', function() {
   /* HYPERLINKS */
   const twitterBtn = document.getElementById('twitter-button');
   twitterBtn.addEventListener('click', function() {
-    window.open('https://x.com/', '_blank');
+    window.open('https://x.com/zencatshiro', '_blank');
   });
 
   const telegramBtn = document.getElementById('telegram-button');
   telegramBtn.addEventListener('click', function() {
-    window.open('https://t.me/', '_blank');
+    window.open('https://t.me/ZenCatShiro', '_blank');
   });
 
   const chartBtn = document.getElementById('chart-button');
