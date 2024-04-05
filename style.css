@@ -2,18 +2,6 @@
   font-family: '2p';
   src: url(./metadata/fonts/PressStart2P-Regular.ttf);
 }
-@font-face {
-  font-family: '2';
-  src: url(./metadata/fonts/Cattie-Regular.ttf);
-}
-@font-face {
-  font-family: '3';
-  src: url(./metadata/fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf);
-}
-@font-face {
-  font-family: '4';
-  src: url(./metadata/fonts/LittlePaws-8MZqZ.ttf);
-}
 
 :root {
   --crust: #8c8fa1;
@@ -35,6 +23,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 #content-container {
@@ -125,4 +114,100 @@ footer {
   font-size: 16px;
   color: black;
   background-color: var(--green);
+}
+
+/* rain effect */
+.rain {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.rain.back-row {
+  display: block;
+  z-index: 1;
+  bottom: 60px;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.drop {
+  position: absolute;
+  bottom: 100%;
+  width: 24px;
+  height: 120px;
+  pointer-events: none;
+  animation: drop 0.5s linear infinite;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0vh);
+  }
+  75% {
+    transform: translateY(90vh);
+  }
+  100% {
+    transform: translateY(90vh);
+  }
+}
+
+.stem {
+  width: 2px;
+  height: 60%;
+  margin-left: 7px;
+  background: linear-gradient(to bottom, rgba(24, 25, 38, 0), rgba(24, 25, 38, 0.33));
+  animation: stem 0.5s linear infinite;
+}
+
+@keyframes stem {
+  0% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.splat {
+  width: 20px;
+  height: 10px;
+  border-top: 2px dotted rgba(24, 25, 38, 1);
+  border-radius: 50%;
+  opacity: 1;
+  transform: scale(0);
+  animation: splat 0.5s linear infinite;
+  display: none;
+}
+
+body.splat-toggle .splat {
+  display: block;
+}
+
+@keyframes splat {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  90% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
 }
