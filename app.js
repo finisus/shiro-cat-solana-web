@@ -1,5 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
   
+  /* MUSIC-raindropLofi */
+  const audio = new Audio('./metadata/dripping-lofi_hour.mp3');
+  audio.loop = true;
+  audio.volume = 0.96;
+  // ensure audio playback on user interaction
+  document.addEventListener('click', function() {
+    audio.play().catch(error => {
+      console.log("Autoplay was prevented. Please interact with the page to play audio.");
+    });
+  });
+
+  // ensure audio playback on user interaction (click or touch)
+  const interactionEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+  document.addEventListener(interactionEvent, function() {
+    audio.play().catch(error => {
+      console.log("Autoplay was prevented. Please interact with the page to play audio.");
+    });
+  });
+  /* RAIN */
+
   var makeItRain = function() {
     //clear out everything
     $('.rain').empty();
