@@ -27,10 +27,9 @@ body {
   color: black;
 }
 
-#main-container {
-  background-color: white;
-  width: 350px;
-  height: 600px;
+#content-container {
+  width: 340px;
+  height: 620px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -38,11 +37,7 @@ body {
 }
 
 header {
-  position: absolute;
-  top: 0;
-  margin-top: 12px;
-  margin-left: 12px;
-  margin-right: 12px;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -54,11 +49,7 @@ header {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 12px;
-  margin-left: 12px;
-  margin-right: 12px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
