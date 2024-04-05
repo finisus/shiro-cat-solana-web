@@ -1,0 +1,60 @@
+@font-face {
+  font-family: '2p';
+  src: url(./metadata/fonts/PressStart2P-Regular.ttf);
+}
+
+:root {
+  --base: #f2cdcd;
+}
+
+/* let page take full height of viewport excess */
+html {height: 100%;} body {position: absolute; top: 0; bottom: 0; right: 0; left: 0;}
+
+body {
+  background-color: var(--base);
+  color: black;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 12px;
+  margin-left: 12px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+#contract {
+  word-break: break-all;
+  text-align: center;
+  font-family: '2p';
+  font-size: 14px;
+  letter-spacing: 0.69px;
+}
+
+#purchase-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+#copy-ca-button {
+  font-size: 16px;
+  padding: 2px 12px;
+  color: black;
+}
+#chart-button {
+  font-size: 16px;
+  padding: 2px 4px;
+  color: black;
+}
+#buy-button {
+  font-size: 16px;
+  padding: 2px 20px;
+  color: black;
+}
