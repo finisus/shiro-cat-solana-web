@@ -2,6 +2,18 @@
   font-family: '2p';
   src: url(./metadata/fonts/PressStart2P-Regular.ttf);
 }
+@font-face {
+  font-family: '2';
+  src: url(./metadata/fonts/Cattie-Regular.ttf);
+}
+@font-face {
+  font-family: '3';
+  src: url(./metadata/fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf);
+}
+@font-face {
+  font-family: '4';
+  src: url(./metadata/fonts/LittlePaws-8MZqZ.ttf);
+}
 
 :root {
   --base: #f2cdcd;
@@ -44,17 +56,17 @@ footer {
   gap: 12px;
 }
 #copy-ca-button {
+  font-family: '2p';
   font-size: 16px;
-  padding: 2px 12px;
   color: black;
 }
 #chart-button {
+  font-family: '2p';
   font-size: 16px;
-  padding: 2px 4px;
   color: black;
 }
 #buy-button {
+  font-family: '2p';
   font-size: 16px;
-  padding: 2px 20px;
   color: black;
 }
