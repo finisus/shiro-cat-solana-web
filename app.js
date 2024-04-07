@@ -82,13 +82,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const buyBtn = document.getElementById('buy-button');
   buyBtn.addEventListener('click', function() {
-    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v', '_blank');
+    window.open('https://raydium.io/swap/?inputCurrency=sol&outputCurrency=6T4mvLddrtyZMjojqrfkj4WC25BXTbKqxh7wVP8QUgqp', '_blank');
   });
 
 
   /* Copy button logic */
   const copyButton = document.getElementById('copy-ca-button');
-  const textToCopy = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v";
+  const textToCopy = "6T4mvLddrtyZMjojqrfkj4WC25BXTbKqxh7wVP8QUgqp";
   copyButton.addEventListener("click", async () => {
     try {
       // Try the modern Clipboard API first (if supported)
